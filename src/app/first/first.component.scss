@@ -1,0 +1,31 @@
+.first-page-container {
+  margin: 150px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 255 / 20%);
+}
+.first-page {
+  padding: 30px
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #9f9f9f;
+  }
+  .order-form {
+    color: #9f9f9f;
+  }
+  .delivery-method {
+    color: #1c87c9;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .button-submit {
+    padding: 20px;
+  }
+  
+  .radio-button{
+    padding-left: 12px;
+  }
+  

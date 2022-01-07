@@ -1,0 +1,47 @@
+.second-page-container {
+    margin: 150px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 255 / 20%);
+}
+
+.second-page {
+    padding: 30px
+}
+
+.main-header {
+    color: #9f9f9f;
+    margin: 120px 0px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.custom-input {
+    width: 100%;
+    padding-top: 7px;
+    border: 1px solid #9f9f9f;
+    padding-bottom: 7px;
+    padding-left: 7px;
+}
+
+.order-form {
+    color: #9f9f9f;
+}
+
+.delivery-method {
+    color: #1c87c9;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.button-submit {
+    padding: 20px;
+}
+
+.mat-form-field {
+    width: 100%;
+    background: 0px;
+}

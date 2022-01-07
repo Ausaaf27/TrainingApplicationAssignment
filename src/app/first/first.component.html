@@ -1,0 +1,41 @@
+<form [formGroup]="firstForm" class="first-page-container">
+<div fxLayout="column" class="first-page">
+    <div fxLayoutAlign="center">
+      <h1 class="order-form">Order Form</h1>
+    </div>
+    <div>
+      <input placeholder="Full Name" class="first-name" formControlName="firstName" />
+    </div>
+    <div><input placeholder="Email" class="email" formControlName="email" /></div>
+    <div><input placeholder="Phone number" class="phone" formControlName="phone" /></div>
+    <div><input placeholder="Today's date" class="todays-date" formControlName="todayDate" /></div>
+    <div><input placeholder="Order due date" class="order-due-date" formControlName="orderDueDate" /></div>
+    <div><input placeholder="Date of event" class="date-of-event" /></div>
+    <div><input placeholder="Time of event" class="time-of-event" /></div>
+  
+    <div><input placeholder="Event Location" class="event-location" /></div>
+  
+    <div><input placeholder="Type of event" class="type-of-event" /></div>
+  
+    <div><input placeholder="Number Of Guest" class="Number-of-guest" /></div>
+  
+    <div><input placeholder="Pickup Time" class="pickup-time" /></div>
+    
+
+
+    <div fxLayout= "column">
+      <div class="delivery-method">Delivery Method</div>
+      <div>
+        <mat-radio-group formControlName="deliveryMethod" >
+          <mat-radio-button value="1" class="radio-button">For Pickup</mat-radio-button>
+          <mat-radio-button value="2" class="radio-button">For Delivery</mat-radio-button>
+        </mat-radio-group>
+       
+      </div>
+
+    </div>
+    <div fxLayoutAlign="center">
+      <button mat-button color="primary" [disabled]="!firstForm.valid">Submit</button>
+    </div>
+  </div>
+</form>

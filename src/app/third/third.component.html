@@ -1,0 +1,145 @@
+<form [formGroup]="secondForm" class="second-page-container">
+    <div fxLayout="column" class="second-page">
+
+        <div fxLayoutAlign="center">
+            <h1 class="main-header">Training Application Form</h1>
+        </div>
+        <div>
+            <h2 class="order-form">Applicant Details</h2>
+        </div>
+
+        <div>
+            <label>Names</label>
+            <input class="custom-input" placeholder="First" formControlName="firstName" />
+        </div>
+
+
+        <div>
+            <label>Last</label>
+            <input placeholder="Last" class="custom-input" formControlName="lastName" />
+        </div>
+
+        <div>
+            <label>Phone</label>
+            <input placeholder="" class="custom-input" formControlName="phone" />
+        </div>
+        <div>
+            <label>Fax</label>
+            <input placeholder="" class="custom-input" />
+        </div>
+        <div>
+            <label>Company Name</label>
+            <input placeholder="" class="custom-input" formControlName="companyName" />
+        </div>
+        <div>
+            <label>Address</label>
+            <input placeholder="Steet Address" class="custom-input" />
+        </div>
+        <div>
+            <input placeholder="Address Line 2" class="custom-input" />
+        </div>
+        <div>
+            <input placeholder="City" class="custom-input" />
+        </div>
+        <div>
+            <input placeholder="Region" class="custom-input" />
+        </div>
+        <div>
+            <input placeholder="Postal/Zip Code" class="custom-input" />
+        </div>
+
+        <div>
+            <mat-label>Country</mat-label>
+
+            <mat-form-field appearance="fill">
+
+                <mat-select>
+                    <mat-option *ngFor="let country of countries" [value]="country.value">
+                        {{country.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div fxLayoutAlign="center">
+            <h2 class="order-form">Course Details</h2>
+        </div>
+        <div>
+            <label>Course Code</label>
+            <input placeholder="" class="custom-input" formControlName="courseCode" />
+        </div>
+
+        <div>
+            <label>Location</label>
+            <input placeholder="" class="custom-input" />
+        </div>
+
+        <div>
+
+            <mat-label>Start Date</mat-label>
+            <mat-form-field appearance="fill">
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+
+
+        <div fxLayoutAlign="center">
+            <h2 class="order-form">Distributor Details</h2>
+        </div>
+        <div>
+            <label>Contact Name</label>
+            <input placeholder="" class="custom-input" />
+        </div>
+        <div>
+            <label>Distributor Name</label>
+            <input placeholder="" class="custom-input" formControlName="distributorName" />
+        </div>
+
+        <div>
+            <label>Distributor Address</label>
+            <input placeholder="Steet Address" class="custom-input" />
+        </div>
+        <div>
+            <input placeholder="Address Line 2" class="custom-input" />
+        </div>
+        <div>
+            <input placeholder="City" class="custom-input" />
+        </div>
+        <div>
+            <input placeholder="Region" class="custom-input" />
+        </div>
+        <div>
+            <input placeholder="Postal/Zip Code" class="custom-input" />
+        </div>
+
+        <div>
+            <mat-label>Country</mat-label>
+
+            <mat-form-field appearance="fill">
+
+                <mat-select>
+                    <mat-option *ngFor="let country of countries" [value]="country.value">
+                        {{country.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div>
+            <label>Phone</label>
+            <input placeholder="" class="custom-input" />
+        </div>
+        <div>
+            <label>Fax</label>
+            <input placeholder="" class="custom-input" />
+        </div>
+
+        <div fxLayout="column" class="privacy-policy">
+            <label>Privacy Policy<span class="required">*</span></label>
+            <mat-checkbox class="example-margin" formControlName="checkBoxPrivacy">Check me!</mat-checkbox>
+        </div>
+        <div fxLayoutAlign="center">
+            <button mat-button color="primary" [disabled]="!secondForm.valid">Submit</button>
+        </div>
+    </div>
+</form>
